@@ -114,10 +114,25 @@ class Part3(Solver):
                 print(f"Passed {i} iterations")
 
 
+# https://www.reddit.com/r/everybodycodes/comments/1h2yc5e/2024_q21_message_to_the_knights/
+class Message(Solver):
+    input_path = "input.txt"
+
+    def solve(self):
+        self.prepare()
+        limit = int(self.pattern.split(":")[0])
+        self.pattern = self.pattern.split(":")[1]
+        self.solve1(limit)
+        for i in range(len(self.m)):
+            print("".join(self.m[i]))
+
+
 def main():
     Part1().solve()
     Part2().solve()
     Part3().solve()
+
+    Message().solve()
 
 
 if __name__ == "__main__":
