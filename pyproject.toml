@@ -1,0 +1,10 @@
+[project]
+name = "ec"
+version = "0.1.0"
+description = "Everybody Codes solutions in Python"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "scipy>=1.15.1",
+    "sympy>=1.13.3",
+]
