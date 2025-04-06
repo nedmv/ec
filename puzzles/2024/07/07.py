@@ -1,5 +1,3 @@
-import itertools
-from multiprocessing import Pool
 from sympy.utilities.iterables import multiset_permutations
 
 
