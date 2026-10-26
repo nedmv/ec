@@ -1,3 +1,8 @@
 *.txt
 
+__pycache__
+
+.ropeproject
+.venv
 .vscode
+.zed
