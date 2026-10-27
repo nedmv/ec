@@ -22,9 +22,9 @@ def part1(D):
 
 def part2(D):
     def generator2():
-        i = 3
+        i = 2
         while True:
-            yield i**2 - (i-2)**2
+            yield 4*(i-1)
             i += 1
     return solve(D, generator2)
 
