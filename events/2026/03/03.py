@@ -10,14 +10,14 @@ def solve(D):
             n = len(b)
             m = len(a)
             res = 0
-            for i in reversed(range(n)):
+            for i in range(n):
                 res += num(b[i]) * pow(num(a[m-1 - (n-1-i) % m]), n-1-i)
             return res
 
         cur = calc(standard, vote)
         ans += cur
         if validate:
-            for i in range(int(vote)):
+            for i in reversed(range(cur, int(vote))):
                 if calc(standard, str(i)) == cur:
                     ans -= cur
                     break
